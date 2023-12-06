@@ -17,6 +17,7 @@ def clearscreen():
 def lihat_barang():
     global ddata
     print(ddata)
+    print("Berhasil Melihat Data Barang")
     kembali_penjual()
 
 def lihat_menu():
@@ -207,7 +208,7 @@ def edit_barang():
     ganti = int(input("Ubah menjadi : "))
     ddata.at[ubah,"Stock"] = ganti
     ddata.to_csv(fileName, index= False)
-    print("Selamat, barang berhasil diubah!")
+    print("Selamat, Data berhasil diupdate")
     print(ddata)
     print("Silahkan cek pada menu Lihat Barang")
     kembali_penjual()
