@@ -65,26 +65,11 @@ def menu_pembeli():
         Pilih >>> """))
     if pilih_awal == 1:
         masuk_pembeli()
-    # elif pilih_awal == 2:
-    #     masuk()
+
     else:
         awal()
 
-# def registrasi():
-    # clearscreen()
-    # print(" REGISTRASI ".center(70, "="))
-    # user = input("Masukkan Username Anda : ")
-    # passw = input("Masukkan Password Anda : ")
-    # if user != "" and passw != "" and user != "Penjual" and passw != "0000":
-    #     print("Registasi akun Anda berhasil!".center(70, "-"))
-    #     print("=" *70)
-    #     time.sleep(1.5)
-    #     masuk()
-    # else:
-    #     print("Registrasi akun Anda gagal! Mohon masukkan data dengan benar!".center(70, "-"))
-    #     print("=" *70)
-    #     time.sleep(1.5)
-    #     awal()
+
 
 def masuk_pembeli():
     print(" LOGIN ".center(70,"="))
@@ -140,7 +125,6 @@ def beli():
 def menu_penjual():
     clearscreen()
     print("=" *70)
-    # print("HALO," + user + "!".center(70))
     header = "HALO, " + user.upper() + "!"
     print(header.center(70))
     print("=" *70)
